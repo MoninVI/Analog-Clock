@@ -1,3 +1,24 @@
 * {
     margin: 0;
 }
+
+.clock {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+}
+
+.clock-face {
+    background-color: black;
+    border-radius: 50%;
+    border-color: brgba(0, 0, 0, 0);
+    width: 500px;
+    height: 500px;
+}
+
+.time {
+    display: none;
+}
