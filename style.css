@@ -38,8 +38,26 @@
     width: 10px;
     background: white;
     top: 50%;
-    left: calc(50% - 5px);
-    border-radius: 5px;
     transform-origin: top;
     transform: rotate(17deg);
+}
+
+.arrow-minutes {
+    position: absolute;
+    height: 220px;
+    width: 8px;
+    background: whitesmoke;
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(45deg);
+}
+
+.arrow-seconds {
+    position: absolute;
+    height: 245px;
+    width: 4px;
+    background: red;
+    top: 50%;
+    transform-origin: top;
+    transform: rotate(80deg);
 }
