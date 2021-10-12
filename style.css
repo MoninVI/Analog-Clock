@@ -22,3 +22,15 @@
 .time {
     display: none;
 }
+
+.arrow-hours {
+    position: absolute;
+    height: 130px;
+    width: 10px;
+    background: white;
+    top: 50%;
+    left: calc(50% - 5px);
+    border-radius: 5px;
+    transform-origin: top;
+    transform: rotate(17deg);
+}
