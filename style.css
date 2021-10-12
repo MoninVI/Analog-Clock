@@ -14,13 +14,22 @@
 .clock-face {
     background-color: black;
     border-radius: 50%;
-    border-color: brgba(0, 0, 0, 0);
     width: 500px;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .time {
     display: none;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .arrow-hours {
