@@ -17,7 +17,6 @@
     width: 500px;
     height: 500px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -26,9 +25,6 @@
 }
 
 .arrows {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
@@ -37,8 +33,8 @@
     height: 130px;
     width: 10px;
     background: white;
-    top: 50%;
-    transform-origin: top;
+    bottom: 50%;
+    transform-origin: bottom;
     transform: rotate(17deg);
 }
 
@@ -47,8 +43,8 @@
     height: 220px;
     width: 8px;
     background: whitesmoke;
-    top: 50%;
-    transform-origin: top;
+    bottom: 50%;
+    transform-origin: bottom;
     transform: rotate(45deg);
 }
 
@@ -57,7 +53,7 @@
     height: 245px;
     width: 4px;
     background: red;
-    top: 50%;
-    transform-origin: top;
+    bottom: 50%;
+    transform-origin: bottom;
     transform: rotate(80deg);
 }
