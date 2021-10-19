@@ -3,15 +3,23 @@ function getTime() {
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
-    var widget = hours + ':' + minutes + ':' + seconds;
-    return widget;
+
+    var massiveTime = {
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    };
+
+    return massiveTime;
 };
 
-function updateTime(widget) {
-    document.querySelector('.time').innerHTML = widget;
-};
+function move() {
+    var arrowSeconds = document.querySelector('.arrow-seconds');
+    var transform = window.getComputedStyle(arrowSeconds).transform;
+
+}
+
 
 setInterval(() => {
     var valueTime = getTime();
-    updateTime(valueTime);
 }, 1000);
