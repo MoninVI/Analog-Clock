@@ -13,13 +13,20 @@ function getTime() {
     return massiveTime;
 };
 
-function move() {
+function move(timeArr) {
     var arrowSeconds = document.querySelector('.arrow-seconds');
-    var transform = window.getComputedStyle(arrowSeconds).transform;
+    arrowSeconds.style.transform = 'rotate(' + 6 * timeArr['seconds'] + 'deg)';
+    var arrowHours = document.querySelector('.arrow-hours');
+    arrowHours.style.transform = 'rotate(' + 30 * timeArr['hours'] + 'deg)';
+    var arrowMinutes = document.querySelector('.arrow-minutes');
+    arrowMinutes.style.transform = 'rotate(' + 6 * timeArr['minutes'] + 'deg)';
+};
 
-}
 
+var valueTime = getTime();
+move(valueTime);
 
 setInterval(() => {
     var valueTime = getTime();
+    move(valueTime)
 }, 1000);
