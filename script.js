@@ -22,11 +22,11 @@ function move(timeArr) {
     arrowMinutes.style.transform = 'rotate(' + 6 * timeArr['minutes'] + 'deg)';
 };
 
-
-var valueTime = getTime();
-move(valueTime);
-
-setInterval(() => {
+function startTime() {
     var valueTime = getTime();
-    move(valueTime)
-}, 1000);
+    move(valueTime);
+};
+
+window.addEventListener('load', startTime);
+
+setInterval(startTime, 1000);

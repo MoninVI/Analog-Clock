@@ -37,7 +37,7 @@
     background: white;
     bottom: 50%;
     transform-origin: bottom;
-    transform: rotate(17deg);
+    transform: rotate(0deg);
 }
 
 .arrow-minutes {
@@ -47,7 +47,7 @@
     background: whitesmoke;
     bottom: 50%;
     transform-origin: bottom;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
 }
 
 .arrow-seconds {
@@ -57,7 +57,7 @@
     background: red;
     bottom: 50%;
     transform-origin: bottom;
-    transform: rotate(80deg);
+    transform: rotate(0deg);
 }
 
 .tags {
